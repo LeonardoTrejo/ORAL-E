@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller as BaseController;
-
-class LeonardoController extends BaseController
+class LeonardoController extends Controller
 {
     // Ejercicio 3
     public function saludo()
     {
-        return 'Hola mundo, soy Leonardo';
+        return view('controlador'); 
     }
 
     // Ejercicio 4
     public function saludoPersonalizado($nombre)
     {
-        return 'Hace tiempo que no te veo ' . $nombre;
+        return view('controlador_saludo', ['nombre' => $nombre]);
     }
 }
 
