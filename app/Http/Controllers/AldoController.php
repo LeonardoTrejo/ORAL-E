@@ -8,6 +8,6 @@ class AldoController extends Controller
 {
     public function index()
     {
-        return "Hola mundo, soy Aldo";
+        return view('AldoController');
     }
 }

@@ -8,6 +8,8 @@ class Controller2 extends Controller
 {
      public function controlador2($nombre)
     {
-        return "Hace tiempo que no te veo, $nombre";
+        return view('Controlador2', [
+            'nombre' => $nombre
+        ]);
     }
 }
