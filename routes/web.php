@@ -17,4 +17,4 @@ Route::get('/posts/{post}/{category?}', function($post, $category = null) {
         return "Que gusto verte {$post} {$category}";
     }
         return "Que gusto verte {$post}";
-});
+}); 

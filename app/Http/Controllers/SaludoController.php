@@ -8,6 +8,8 @@ class SaludoController extends Controller
 {
     public function index($saludo = null)
     {
-        return "Hace tiempo que no te veo $saludo";
+        return view('posts.index', [
+                'saludo' => $saludo
+        ]);
     }
 }
